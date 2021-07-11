@@ -1,1 +1,38 @@
-Hello World
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="val.css">
+    <!-- Packed application javascript -->
+    <script type="module" src="./client.js"></script>
+</head>
+<body>
+
+    <div id = "initPage">
+        <h1>Le Val Des Etoiles</h1>
+        <label for="fname">Nom d'étoile</label>
+        <input type="text" id="input_name" value="Arrakis"><br><br>
+        <label for="fname">Serveur</label>
+        <input type="text" id="input_url" value="localhost:8080"><br><br>
+        <button id="connectButton">Se connecter</button>
+    </div>
+    <div id = "gameListPage" style='display:none;'>
+        <h1>Le Val Des Etoiles</h1>
+        <label id="welcome">Bienvenu, étoile</label><br><br>
+        <div id="GameList"></div><br><br>
+        <div id="makeNewGameArea">
+            <button id="newGameButton">Nouvelle Partie</button><br><br>
+            <label for="fname">Nom</label>
+            <input type="text" id="input_gameName" value=""><br><br>
+            <label for="fname">Regles</label>
+            <input type="text" id="input_ruleSet" value="Helios"><br><br>
+        </div>
+        <button id="DisconnectButton">Deconnecter</button>
+    </div>
+    <div id = "gameBoard" style='display:none;'>
+        <label id="gameInfo"></label><br><br>
+        <button id="backToListButton">Retour a la liste des Parties</button>
+    </div>
+    
+</body>
+</html>
